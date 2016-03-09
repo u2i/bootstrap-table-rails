@@ -27,7 +27,7 @@
             sModal += '                     <h4 class="modal-title" id="' + _id + 'Label">' + that.options.formatMultipleSort() + '</h4>';
             sModal += '                 </div>';
             sModal += '                 <div class="modal-body">';
-            sModal += '                     <div class="bootstrap-table">';
+            sModal += '                     <div class="bootstrap-table-js">';
             sModal += '                         <div class="fixed-table-toolbar">';
             sModal += '                             <div class="bars">';
             sModal += '                                 <div id="toolbar">';

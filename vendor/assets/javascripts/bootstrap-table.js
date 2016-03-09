@@ -540,7 +540,7 @@
 
     BootstrapTable.prototype.initContainer = function () {
         this.$container = $([
-            '<div class="bootstrap-table">',
+            '<div class="bootstrap-table-js">',
             '<div class="fixed-table-toolbar"></div>',
             this.options.paginationVAlign === 'top' || this.options.paginationVAlign === 'both' ?
                 '<div class="fixed-table-pagination" style="clear: both;"></div>' :
@@ -769,7 +769,7 @@
         });
         this.$container.off('click', '.th-inner').on('click', '.th-inner', function (event) {
             var target = $(this);
-            if (target.closest('.bootstrap-table')[0] !== that.$container[0])
+            if (target.closest('.bootstrap-table-js')[0] !== that.$container[0])
                 return false;
 
             if (that.options.sortable && target.parent().data().sortable) {

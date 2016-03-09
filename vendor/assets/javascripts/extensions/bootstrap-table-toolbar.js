@@ -108,7 +108,7 @@
     $.extend($.fn.bootstrapTable.defaults, $.fn.bootstrapTable.locales);
 
     var BootstrapTable = $.fn.bootstrapTable.Constructor,
-        _initToolbar = BootstrapTable.prototype.initToolbar,        
+        _initToolbar = BootstrapTable.prototype.initToolbar,
         _load = BootstrapTable.prototype.load,
         _initSearch = BootstrapTable.prototype.initSearch;
 
@@ -154,7 +154,7 @@
             return;
         } else {
             if (!firstLoad) {
-                var height = parseInt($(".bootstrap-table").height());
+                var height = parseInt($(".bootstrap-table-js").height());
                 height += 10;
                 $("#" + this.options.idTable).bootstrapTable("resetView", {height: height});
                 firstLoad = true;

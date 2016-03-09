@@ -4,7 +4,7 @@
     return;
   }
   angular.module('bsTable', []).directive('bsTableControl', function () {
-    var CONTAINER_SELECTOR = '.bootstrap-table';
+    var CONTAINER_SELECTOR = '.bootstrap-table-js';
     var SCROLLABLE_SELECTOR = '.fixed-table-body';
     var SEARCH_SELECTOR = '.search input';
     var bsTables = {};
